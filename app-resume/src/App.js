@@ -17,17 +17,18 @@ function App() {
   <Container>
    {/* In here I am telling js to put eveything is in grip layer -which is 12 equal pieces if i say div column of 12 it is going to take up whole pages*/}
      <Grid container>
-       <Grid item xs={12} sm={12} md={4} lg={3} style={{backgroundColor:'blue'}}>
+       <Grid item xs={12} sm={12} md={4} lg={3}>
        <Profile/>
        </Grid>
        <Grid item xs style={{backgroundColor:'red'}}>
        <Header/>
-       {/* <Router>
+       <Router>
+       <Footer/>
        <Routes>
-        <Route path='/portfolio' component={Portfolio}/>
-        <Route path='/resume' element={<Resume/>}/>
+        <Route path="/portfolio" element={<Portfolio/>} />
+        <Route path="/" element={<Resume/>} />   
         </Routes>
-       </Router> */}
+       </Router>
        <Footer/>
        </Grid>
      </Grid>
