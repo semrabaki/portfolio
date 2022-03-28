@@ -1,23 +1,52 @@
 import React from 'react';
 import {Typography} from '@material-ui/core';
 import './Profile.css';
-import CustomTimeline from '../Timeline/Timeline';
-
+import CustomTimeline,{CustomTimeLineSeparator} from '../Timeline/Timeline.js';
+import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
+import resumeData from '../../utils/resumeData';
+import TimelineContent from '@material-ui/lab/TimelineContent';
+import TimelineItem from '@material-ui/lab/TimelineItem';
 console.log('deneme');
+
+const CustomTimeLineItem=({title,text,link})=>(
+  <TimelineItem>
+   <CustomTimeLineSeparator/>
+   <TimelineContent className='timelineItem_content'> 
+    {link?(
+      <Typography className="timelineItem_text">
+      <span>{title}:</span>{" "}
+      <a href={link} target='blank'>
+        {text}
+      </a>
+      </Typography>
+      ):(
+      <Typography className="timelineItem_text">
+      <span>{title}:</span>{text}
+      </Typography>
+      )}
+   </TimelineContent>
+</TimelineItem>
+);
 const Profile = () => {
   return (
     <div className='profile container_shadow'>
     <div className='profile_name'>
-    <Typography className='name'>Semra Baki</Typography>
-    <Typography className='title'>Software Engineer</Typography>
+    <Typography className='name'>{resumeData.name}</Typography>
+    <Typography className='title'>{resumeData.title}</Typography>
     </div>
     <figure className='profile_image'>
       <img src={require('../../assets/images/sb.jpg')} alt=""/>
     </figure>
 
     <div className='profile_information'>
-      {/* Bu asagidaki kodu acinca ekrandan profile page gidiyor sadece backgorund kalior. node_modules da libraryler yuklu ama bilemedm */}
-      <CustomTimeline/>
+      <CustomTimeline icon={<PersonOutlineOutlinedIcon/>}>
+        <CustomTimeLineItem title="Name" text={resumeData.name}/>
+        <CustomTimeLineItem title="Title" text={resumeData.title}/>
+        <CustomTimeLineItem title="Email" text={resumeData.email}/>
+        {Object.keys(resumeData.socials).map(key => (
+              <CustomTimeLineItem title={key} text={resumeData.socials[key].text} link={resumeData.socials[key].link} />
+            ))}
+       </CustomTimeline>
       <br/>
       <button>my button</button>
     </div>

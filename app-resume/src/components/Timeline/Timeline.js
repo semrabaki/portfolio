@@ -1,41 +1,43 @@
 import React from 'react'
-import Timeline from '@mui/lab/Timeline';
-import TimelineItem from '@mui/lab/TimelineItem';
-import TimelineSeparator from '@mui/lab/TimelineSeparator';
-import TimelineConnector from '@mui/lab/TimelineConnector';
-import TimelineContent from '@mui/lab/TimelineContent';
-import TimelineDot from '@mui/lab/TimelineDot';
+import Timeline from '@material-ui/lab/Timeline';
+import TimelineItem from '@material-ui/lab/TimelineItem';
+import TimelineSeparator from '@material-ui/lab/TimelineSeparator';
+import TimelineConnector from '@material-ui/lab/TimelineConnector';
+import TimelineContent from '@material-ui/lab/TimelineContent';
+import TimelineDot from '@material-ui/lab/TimelineDot';
 import "./Timeline.css"
-// import { Typography } from '@material-ui/core';
+import { Typography } from '@material-ui/core';
 
 
-const CustomTimeline = () => {
-  
+const CustomTimeline = ({ title,icon,children}) => {
+
 
   return (
-     <Timeline>
-      <TimelineItem>
-        <TimelineSeparator>
-          <TimelineDot />
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent>Eat</TimelineContent>
-      </TimelineItem>
-      <TimelineItem>
-        <TimelineSeparator>
-          <TimelineDot />
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent>Code</TimelineContent>
-      </TimelineItem>
-      <TimelineItem>
-        <TimelineSeparator>
-          <TimelineDot />
-        </TimelineSeparator>
-        <TimelineContent>Sleep</TimelineContent>
-      </TimelineItem>
+    <Timeline className={'timeline'}>
+    {/* Item Header */}
+    <TimelineItem className={'timeline_firstItem'}>
+      <TimelineSeparator>
+        <TimelineDot className={'timeline_dot_header'}>
+        {icon}
+        </TimelineDot> 
+        <TimelineConnector />
+      </TimelineSeparator>
+      <TimelineContent>
+      <Typography variant='h6' className={'timeline_header'}>
+      {title}
+      </Typography>
+      </TimelineContent>
+    </TimelineItem>
+    {children}
     </Timeline>
-);
-}
-export default CustomTimeline;
+  );
+};
 
+export const CustomTimeLineSeparator = () => (
+  <TimelineSeparator className={"seperator_padding"}>
+    <TimelineDot variant={'outlined'}  className={"timeline_dot"}/>
+    <TimelineConnector />
+  </TimelineSeparator>
+);
+
+export default CustomTimeline;
