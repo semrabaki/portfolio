@@ -14,9 +14,9 @@ import './components/Footer';
 
 function App() {
   return (
-  <Container>
+  <Container className={'top_60'}>
    {/* In here I am telling js to put eveything is in grip layer -which is 12 equal pieces if i say div column of 12 it is going to take up whole pages*/}
-     <Grid container>
+     <Grid container spacing={7}>
        <Grid item xs={12} sm={12} md={4} lg={3}>
        <Profile/>
        </Grid>

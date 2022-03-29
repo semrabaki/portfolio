@@ -6,6 +6,8 @@ import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined
 import resumeData from '../../utils/resumeData';
 import TimelineContent from '@material-ui/lab/TimelineContent';
 import TimelineItem from '@material-ui/lab/TimelineItem';
+import CustomButton from '../Button/Button';
+import GetAppOutlinedIcon from '@mui/icons-material/GetAppOutlined';
 console.log('deneme');
 
 const CustomTimeLineItem=({title,text,link})=>(
@@ -48,7 +50,10 @@ const Profile = () => {
             ))}
        </CustomTimeline>
       <br/>
-      <button>my button</button>
+      <div className="button_container" style={{display:'flex'}}>
+      <CustomButton text={'Download Cv'} icon={<GetAppOutlinedIcon/>}/> 
+      </div>
+     
     </div>
      
     </div>
