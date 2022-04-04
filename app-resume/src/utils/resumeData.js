@@ -2,6 +2,7 @@ import React from "react";
 import { AnimationOutlined } from "@mui/icons-material";
 import FacebookIcon from '@mui/icons-material/Facebook';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 export default{
     name:"Semra Baki",
     title:"Software Engineer",
@@ -20,7 +21,7 @@ export default{
         Linkedin:{
             link:'https://www.linkedin.com/in/semra-baki-553553221/',
             text:'My LinkedIn',
-            icon:<FacebookIcon/>, 
+            icon:<LinkedInIcon/>, 
         },
 
 

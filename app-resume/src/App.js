@@ -10,6 +10,7 @@ import Header from './components/Header/Header.js';
 import './App.css';
 
 import './components/Footer';
+import { Switch } from 'react-router-dom/cjs/react-router-dom.min';
 
 
 function App() {
@@ -20,14 +21,13 @@ function App() {
        <Grid item xs={12} sm={12} md={4} lg={3}>
        <Profile/>
        </Grid>
-       <Grid item xs style={{backgroundColor:'red'}}>
-       <Header/>
+       <Grid item xs style={{}}>
        <Router>
-       <Footer/>
-       <Routes>
+       <Header/>
+       <Switch>
         <Route path="/portfolio" element={<Portfolio/>} />
         <Route path="/" element={<Resume/>} />   
-        </Routes>
+        </Switch>
        </Router>
        <Footer/>
        </Grid>
