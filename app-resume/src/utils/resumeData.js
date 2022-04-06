@@ -1,5 +1,5 @@
 import React from "react";
-import { AnimationOutlined } from "@mui/icons-material";
+import { AssignmentOutlined , WebOutlined} from "@mui/icons-material";
 import FacebookIcon from '@mui/icons-material/Facebook';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -51,7 +51,7 @@ export default{
         }
 
      ],
-     education:[
+     educations:[
         {
             title:'eeucation 1',
             date:'2018-Present',
@@ -73,5 +73,69 @@ export default{
            description:' dsjskjdslksjdl'
        }
 
+    ],
+    services:[
+        {
+            title:"Web Dev",
+            description:" I have been a basdass web developer for 10 years",
+            icon:<WebOutlined/>
+        },
+        {
+            title:"Web Dev",
+            description:" I have been a basdass web developer for 10 years",
+            icon:<AssignmentOutlined/>
+        },
+        {
+            title:"Web Dev",
+            description:" I have been a basdass web developer for 10 years",
+            icon:<WebOutlined/>
+        }
+    ],
+    skills: [
+        {   id:"1",
+            title: "FRONT-END",
+            description: [
+                "ReactJS",
+                "JavaScript",
+                "HTML5",
+                "CSS3",
+                "Bootstrap",
+            ]
+        },
+        {   id:"2",
+            title: "BACK-END",
+            description: [
+                "Java",
+                "JavaEE",
+                "Spring Framework",
+                "Hibernate",
+                ,"JDBC",
+                "Restful Api",
+                "Micro-Services With Spring Boot",
+            ]
+        },
+        {   id:"3",
+            title: "DATABASES",
+            description: [
+                "Oracle SQL",
+                "MySQL",
+                "MongoDB",
+                "PostgreSQL"
+                
+            ]
+        },
+        {   id:"4",
+            title: "SOURCE CONTROL",
+            description: [
+                "Git",
+                "GitHub",
+                "SCRUM/Agile",
+                "Jira/Jira Xray"
+                
+            ]
+        }
+
     ]
+  
+
 };
