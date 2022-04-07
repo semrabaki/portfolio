@@ -1,5 +1,5 @@
 import React from "react";
-import { AssignmentOutlined , WebOutlined} from "@mui/icons-material";
+import { AssignmentOutlined , Language, WebOutlined, YouTube} from "@mui/icons-material";
 import FacebookIcon from '@mui/icons-material/Facebook';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -135,6 +135,60 @@ export default{
             ]
         }
 
+    ], 
+    projects:[
+        {
+            tag:'React',
+            title:'React Project 1',
+            caption:"A short description",
+            image:'',
+            description:'This is my project description',
+            links:[
+                { link:'https://www.google.com', icon:<YouTube/>},
+                { link:'https://www.google.com', icon:<GitHubIcon/>},
+                { link:'https://www.google.com', icon:<Language/>},
+
+            ]
+        },
+        {
+            tag:'React',
+            title:'React Project 2',
+            caption:"A short description",
+            image:'',
+            description:'This is my project description',
+            links:[
+                { link:'https://www.google.com', icon:<YouTube/>},
+                { link:'https://www.google.com', icon:<GitHubIcon/>},
+                { link:'https://www.google.com', icon:<Language/>},
+
+            ]
+        },
+        {
+            tag:'Spring Boot -1',
+            title:'React Project 3',
+            caption:"A short description",
+            image:'',
+            description:'This is my project description',
+            links:[
+                { link:'https://www.google.com', icon:<YouTube/>},
+                { link:'https://www.google.com', icon:<GitHubIcon/>},
+                { link:'https://www.google.com', icon:<Language/>},
+
+            ]
+        },
+        {
+            tag:'Spring Boot -2',
+            title:'React Project 3',
+            caption:"A short description",
+            image:'',
+            description:'This is my project description',
+            links:[
+                { link:'https://www.google.com', icon:<YouTube/>},
+                { link:'https://www.google.com', icon:<GitHubIcon/>},
+                { link:'https://www.google.com', icon:<Language/>},
+
+            ]
+        }
     ]
   
 

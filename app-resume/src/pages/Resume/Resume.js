@@ -16,6 +16,7 @@ import {
   TimelineItem,
   TimelineSeparator,
 } from "@material-ui/lab";
+import CustomButton from "../../components/Button/Button";
 
 const Resume = () => {
   return (
@@ -157,8 +158,99 @@ const Resume = () => {
           </Grid>
         </Grid>
       </Grid>
-      {/* Contact */}
-      <Grid container className="section"></Grid>
+      {/*Contact*/}
+      <div id="contactUs">
+        <Grid container spacing={6} className="section pt_45 pb_45">
+          {/*Conatct form */}
+          <Grid item xs={12} lg={7}>
+            <Grid container>
+              <Grid item className="section_title mb_30">
+                <span></span>
+                <h6 className="section_title_text"> Contact Form</h6>
+              </Grid>
+
+              <Grid item xs={12}>
+                {/* <form onSubmit={sendEmail}> */}
+                <form >
+                  <Grid container spacing={3}>
+                    <Grid item xs={12} sm={6}>
+                      <input
+                        type="text"
+                        placeholder="Name"
+                        name="name"
+                        className="form-control"
+                      />
+                    </Grid>
+
+                    <Grid item xs={12} sm={6}>
+                      <input
+                        type="text"
+                        placeholder="Email"
+                        name="email"
+                        className="form-control"
+                      />
+                    </Grid>
+
+                    <Grid item xs={12}>
+                      <textarea
+                        cols="30"
+                        rows="8 "
+                        type="text"
+                        placeholder="Your message"
+                        name="message"
+                        className="form-control"
+                      />
+                    </Grid>
+
+                    <Grid item xs={12}>
+                      <CustomButton text="Submit" type="submit" />
+                    </Grid>
+                  </Grid>
+                </form>
+              </Grid>
+            </Grid>
+          </Grid>
+          {/* Conatct information */}
+          <Grid item xs={12} lg={5}>
+            <Grid container>
+              <Grid item className="section_title mb_30">
+                <span></span>
+                <h6 className="section_title_text"> Contact Information</h6>
+              </Grid>
+              <Grid item xs={12}>
+                <Grid container>
+                  <Grid item xs={12}>
+                    <Typography className="contactInfo_item">
+                      <span> Address: </span> {resumeData.address}
+                    </Typography>
+                  </Grid>
+
+                  <Grid item xs={12}>
+                    <Typography className="contactInfo_item">
+                      <span> Email: </span> {resumeData.Email}
+                    </Typography>
+                  </Grid>
+                </Grid>
+              </Grid>
+              <Grid item xs={12}>
+                <Grid container className="contactInfo_socialsContainer">
+                  {Object.keys(resumeData.socials).map((key) => (
+                    <Grid
+                      key={resumeData.socials[key].id}
+                      item
+                      className="contactInfo_socials"
+                    >
+                      <a href={resumeData.socials[key].link}>
+                        {resumeData.socials[key].icon}
+                      </a>
+                    </Grid>
+                  ))}
+                </Grid>
+              </Grid>
+            </Grid>
+          </Grid>
+        </Grid>
+      </div>
     </>
   );
 };
