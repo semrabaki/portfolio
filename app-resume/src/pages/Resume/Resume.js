@@ -17,8 +17,22 @@ import {
   TimelineSeparator,
 } from "@material-ui/lab";
 import CustomButton from "../../components/Button/Button";
+import emailjs from "emailjs-com";
 
 const Resume = () => {
+
+  function sendEmail(e) {
+    e.preventDefault();
+
+emailjs.sendForm('gmail', 'template_vzzyv4f', e.target, 'user_265Ehtk5nI5D10hOVTXDj')
+  .then((result) => {
+      console.log(result.text);
+  }, (error) => {
+      console.log(error.text);
+  });
+    e.target.reset();
+}
+
   return (
     <>
       {/*About me */}
@@ -106,9 +120,9 @@ const Resume = () => {
         </Grid>
 
         <Grid item xs={12}>
-          <Grid container spacing={3} justify="space-around">
+          <Grid container spacing={6} justify="space-around">
             {resumeData.services.map((service) => (
-              <Grid item xs={12} sm={6} md={3} key={service.id}>
+              <Grid item xs={12} sm={6} md={6} key={service.id}>
                 <div className="service">
                   <Icon className="service_icon">{service.icon}</Icon>
                   <Typography className="service_title" variant="h6">
@@ -159,8 +173,8 @@ const Resume = () => {
         </Grid>
       </Grid>
       {/*Contact*/}
-      <div id="contactUs">
-        <Grid container spacing={6} className="section pt_45 pb_45">
+      <div id="contactUs" className="section pb_45">
+        <Grid container spacing={6} className="section pb_45">
           {/*Conatct form */}
           <Grid item xs={12} lg={7}>
             <Grid container>
@@ -170,8 +184,8 @@ const Resume = () => {
               </Grid>
 
               <Grid item xs={12}>
-                {/* <form onSubmit={sendEmail}> */}
-                <form >
+                <form onSubmit={sendEmail}>
+                {/* <form > */}
                   <Grid container spacing={3}>
                     <Grid item xs={12} sm={6}>
                       <input
@@ -227,7 +241,7 @@ const Resume = () => {
 
                   <Grid item xs={12}>
                     <Typography className="contactInfo_item">
-                      <span> Email: </span> {resumeData.Email}
+                      <span> Email: </span> {resumeData.email}
                     </Typography>
                   </Grid>
                 </Grid>

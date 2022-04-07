@@ -8,6 +8,8 @@ import TimelineContent from '@material-ui/lab/TimelineContent';
 import TimelineItem from '@material-ui/lab/TimelineItem';
 import CustomButton from '../Button/Button';
 import GetAppOutlinedIcon from '@mui/icons-material/GetAppOutlined';
+import MyResume from "../../utils/MyResume.pdf"
+import FileSaver from 'file-saver';
 console.log('deneme');
 
 const CustomTimeLineItem=({title,text,link})=>(
@@ -30,6 +32,7 @@ const CustomTimeLineItem=({title,text,link})=>(
 </TimelineItem>
 );
 const Profile = () => {
+ 
   return (
     <div className='profile container_shadow'>
     <div className='profile_name'>
@@ -51,7 +54,7 @@ const Profile = () => {
        </CustomTimeline>
       <br/>
       <div className="button_container" style={{display:'flex'}}>
-      <CustomButton text={'Download Cv'} icon={<GetAppOutlinedIcon/>}/> 
+      <CustomButton text="Download Resume" icon={<GetAppOutlinedIcon />} href={MyResume}/>
       </div>
      
     </div>

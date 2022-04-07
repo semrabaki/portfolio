@@ -11,6 +11,17 @@ import "./header.css";
 import CustomButton from "../Button/Button";
 
 const Header = (props) => {
+
+  function showContactMe() {
+    const element = document.getElementById("contactUs");
+
+    if (element != null) {
+      element.scrollIntoView({ behavior: "smooth" })
+    } else {
+      alert("Please Go to Resume Page and Click Me Again")
+      
+    }
+  }
   // ?  means if the props is exist
   const pathName = props?.location?.pathName;
   return (
@@ -53,7 +64,7 @@ const Header = (props) => {
               {resumeData.socials[key].icon}
             </a>
           ))}
-          <CustomButton text={'Hire Me'} icon={<Telegram/>}/>
+          <CustomButton text={'Contact me'} icon={<Telegram/>} onClickMe={showContactMe}/>
         </div>
       </Navbar.Collapse>
     </Navbar>
@@ -61,3 +72,4 @@ const Header = (props) => {
 };
 
 export default withRouter(Header);
+
