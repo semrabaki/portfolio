@@ -169,6 +169,7 @@ export default{
             links:[
                 { link:'https://github.com/semrabaki/Rauting-Apifecthing-Example', icon:<GitHubIcon/>},
                 { link:'https://react-routing-fetching-api.netlify.app/', icon:<Language/>},
+                
 
             ]
         },
@@ -180,6 +181,7 @@ export default{
             description:'I am currently developing a bank project from scratch. UI part of the project is currently being created with ReactJS along with external libraries such as Material-UI, BootStrap, react-router-dom etc.  Please refer to the GitHub repo for more updating information about it. ',
             links:[
                 { link:'https://github.com/semrabaki/SurebankFrontEnd', icon:<GitHubIcon/>},
+                { link:'https://frontendsurebank.herokuapp.com', icon:<Language/>}
             ]
         },
         {
@@ -190,6 +192,8 @@ export default{
             description:'The BackEnd part of the Bank Application is created by SpringBoot with help of external dependencies. Method-Based Authorication and JWT is being used for security and MySQL is for DataBase.  Please refer to the GitHub repo for more updating information about it.',
             links:[
                 { link:'https://github.com/semrabaki/SureBankBackEnd', icon:<GitHubIcon/>},
+                { link:'https://frontendsurebank.herokuapp.com', icon:<Language/>}
+        
             ]
         },
         {
@@ -197,9 +201,10 @@ export default{
             title:'To Do List',
             caption:"To Do List BackEnd",
             image:ToDoList,
-            description:'The BackEnd part of this application is created by SpringBoot with help of external dependencies. This project is created for practising basic CRUD operations. Please check the UI part of this project from the React/JS project section. UI part and BackEnd will be connected in the future. I  Please refer to the GitHub repo for more updating information about it.',
+            description:'The BackEnd part of this application is created by SpringBoot with help of external dependencies. This project is created for practising basic CRUD operations. Please check the UI part of this project from the React/JS project section. UI part and BackEnd will be connected in the future. Please refer to the GitHub repo for more updating information about it.',
             links:[
                 { link:'https://github.com/semrabaki/SureBankBackEnd', icon:<GitHubIcon/>},
+    
             ]
         },
         {
@@ -207,7 +212,7 @@ export default{
             title:'User Info -CRUD Operations',
             caption:"User Info -CRUD Operations BackEnd",
             image:UserInfoUI,
-            description:'The BackEnd part of this application is created by SpringBoot with help of external dependencies. This project is created for practising basic CRUD operations. UI part and BackEnd will be connected in the future. I  Please refer to the GitHub repo for more updating information about it.',
+            description:'The BackEnd part of this application is created by SpringBoot with help of external dependencies. This project is created for practising basic CRUD operations. UI part and BackEnd will be connected in the future. Please refer to the GitHub repo for more updating information about it.',
             links:[
                 { link:'https://github.com/semrabaki/UserInfoBackEnd', icon:<GitHubIcon/>},
             ]
