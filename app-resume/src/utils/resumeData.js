@@ -36,7 +36,7 @@ export default{
         {
             title:'Software Engineer',
             date:'July 2022 - Present',
-            description:'Involved in designing, implementing, writing unit and integration tests for a number features end-to-end. Responsible for developing APIs and user tools to support management, and delivery of dynamic message content to USAA members through multiple channels. Use Spring Boot to develop APIs deployed to Red Hat OpenShift cloud environment, React JS frontend deployed to AWS, and Gitlab CI for automated build, test, and deployment pipelines. '
+            description:'Involved in designing, implementing, writing unit and integration tests for a number features end-to-end. Responsible for developing APIs and user tools to support management, and delivery of dynamic message content to USAA members through multiple channels. Use Spring Boot to develop APIs deployed to Red Hat OpenShift cloud environment, React JS frontend deployed to AWS, and Gitlab CI for automated build, test, and deployment pipelines.cle '
         },
          {
              title:'Software Engineer',
