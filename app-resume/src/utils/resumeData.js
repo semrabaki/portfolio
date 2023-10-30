@@ -33,9 +33,14 @@ export default{
     },
     about: "Former researcher and teacher, current software engineer and life-long learner who has a huge passion for building software and exploring new technologies. Seeking to utilize broad educational background with excellent analytical, technical, and programming skills to meet business needs.\n \n My  skills:\n\n -Have an experience in Spring Framework by using Spring Boot and Spring JWT.\n\n-Experience in using Java to create Restful-API in Spring environment. \n\n-I have experience building user interface with ReactJS along with React-router and Material-UI \n\n-Experience in using ReactJS with ES6 features to develop reusable components. \n\n-Experience in responsive web design using CSS3 media queries and libraries such as Bootstrap. \n\n-Experience in version control tools such as Git, GitHub.\n\n-Experience in using JIRA and following agile development process. \n\n-Deep understanding of Software Development Life Cycle (SDLC) including requirements analysis, design, testing implementation, and maintenance.\n\n-Deep understanding of Object-Oriented Programming (OOP) and Functional Programming (FP).\n\n-Excellent interpersonal abilities, communication skills, time management and team skills.",
     experinces:[
+        {
+            title:'Software Engineer',
+            date:'July 2022 - Present',
+            description:'Involved in designing, implementing, writing unit and integration tests for a number features end-to-end. Responsible for developing APIs and user tools to support management, and delivery of dynamic message content to USAA members through multiple channels. Use Spring Boot to develop APIs deployed to Red Hat OpenShift cloud environment, React JS frontend deployed to AWS, and Gitlab CI for automated build, test, and deployment pipelines. '
+        },
          {
              title:'Software Engineer',
-             date:'June 2021 - Present',
+             date:'June 2021 - July 2022',
              description:'Currently working as a Software Engineer utilizing technologies where we worked on national and international transactions to make payments on a secure system. Spring Tool Suite is used to develop the backend structure of this project. Spring Boot and Spring JWT is the framework on the backend to create secure, authenticated and authorized Restful APIs with the Maven project structure.I extended UserDetailsService and  I made connections to the Database which is PostgreSQL by extending JPA repository and build Spring powered applications. I am currently working on creating user interface with ReactJS along with React-router and reusable components with ES6 features. Many external libraries such as Bootstrap, Formik, Material-UI, Yup, React-strap, React-toastify help me to complete the UI part of the project. Git and GitHub are being used in my current team as a source control tool daily. Jira and Jira Xray are project management tools for our SCRUM team. I am currently working in an Agile environment and having Grooming meetings to understand user stories. Our Sprints are two weeks long and we are having daily standups. '
          },
          {
